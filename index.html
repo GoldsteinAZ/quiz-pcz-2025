@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Aplikacje WWW - Nauka</title>
+    <title>Quiz - Grafika</title>
     <style>
         * {
             margin: 0;
@@ -641,9 +641,9 @@
         <div class="database-selector">
             <label for="database-select">Wybierz bazę pytań:</label>
             <select id="database-select" onchange="changeDatabase()">
-                <option value="data_awww.json">Quiz Aplikacje WWW</option>
-                <option value="data_awww_short.json">Quiz Aplikacje WWW (skrócony)</option>
-                <option value="data_roboty.json">Robotyka - Baza Pytań</option>
+                <option value="data_grafika_short.json">Quiz - Grafika - Krótki - 28</option>
+                <option value="data_grafika_medium.json">Quiz - Grafika - Średni - 75</option>
+                <option value="data_grafika_long.json">Quiz - Grafika - Długi - 113</option>
             </select>
         </div>
           <div class="buttons-container">
@@ -680,7 +680,7 @@
             NAUKA
         </button>
     </div><script>        let quizData = null;
-        let currentDatabase = 'data_awww.json'; // domyślna baza danych
+        let currentDatabase = 'data_grafika_short.json'; // domyślna baza danych
         let originalQuestions = null; // przechowuje oryginalne pytania
         let isShuffled = false; // flaga czy pytania są w losowej kolejności
         let userAnswers = {}; // przechowuje odpowiedzi użytkownika
